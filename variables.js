@@ -8,3 +8,12 @@ var edad;
 
 //Inicializar variables
 edad = 32;
+
+//variable elemento
+var elementos = ["PC", "Cel"];
+
+//variable objeto
+var persona = {
+    nombre: "Felipe",
+    edad: 30
+}
