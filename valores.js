@@ -1,10 +1,10 @@
-//valores int
+//valores int o number
 40
 
 //valores de string
 "Andrés Pérez"
 
-//valores booleanos
+//valores boolean
 true
 false
 
@@ -12,8 +12,8 @@ false
 null
 undefined //valor reservado de javascript
 
-//valor de tió array (valores primitivos)
+//valor de tipo array u object (valores primitivos)
 [1,2,3]
 
-//valor de tipó objeto
+//valor de tipó object
 {nombre: "Andrés"}
