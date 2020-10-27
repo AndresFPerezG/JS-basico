@@ -26,8 +26,37 @@ var articulosFiltrados = articulos.filter (function(articulo){
 
 //--------------******-------------*****--------------*******---------------******------------//
 
-// Método de recorrido de array FILTER:
+// Método de recorrido de array MAP:
 
 var nombreArticulos = articulos.map(function(articulo){
     return articulo.nombre          //me trae todos los nombres en forma de string de todos los artículos
 });
+
+//--------------******-------------*****--------------*******---------------******------------//
+
+// Método de recorrido de array FIND:
+//Valida por medio de true o false
+//Si el articulo que buscamos existe lo retorna.
+
+
+var encuentraArticulos = articulos.find(function(articulo){
+    return articulo.nombre === "teclado"
+});
+
+//--------------******-------------*****--------------*******---------------******------------//
+
+// Método de recorrido de array FOREACH:
+//NO GENERA UN NUEVO ARRAY
+
+articulos.forEach(function(articulo){
+    console.log(articulo.nombre);
+});
+
+//--------------******-------------*****--------------*******---------------******------------//
+
+// Método de recorrido de array SOME:
+//valida verdadero o falso, si existe retorna verdadero, sino falso.
+   
+var articulosBaratos = articulos.some(function(articulo){
+        return articulo.costo <= 1000;
+    });
